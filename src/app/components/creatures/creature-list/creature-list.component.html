@@ -1,0 +1,19 @@
+<p>
+  creature-list works!
+</p>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th *ngFor="let col of columns">
+          {{col}}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let creat of creatures">
+        <td>{{creat.nombre}}</td>
+        <td>{{creat.movimiento}}</td>
+        <td>{{creat.moral}}</td>
+    </tr>
+  </tbody>
+</table>
